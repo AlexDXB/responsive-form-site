@@ -4,7 +4,7 @@
   }
   body {
     margin: 0 auto;
-    max-width: 1024px;
+    
 
     
   }
@@ -32,7 +32,7 @@
   }
   .third {
     border-top: 2px solid #1A374D;
-    margin-bottom:  30px;
+    margin-bottom:  40px;
     text-align: center;
     
 }
@@ -74,12 +74,12 @@
     text-align: left;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     }
   fieldset p {
     text-align: left;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
   
@@ -159,6 +159,9 @@
   input[type="submit"]:hover {
   color: #1A374D;
   } 
+  input:hover {
+    background: lightblue;
+  }
   
  
 
@@ -172,8 +175,6 @@
     {
         max-width: 50%;
         margin: auto;
-        
-        
     }
     .info {
         padding: 0;
@@ -188,6 +189,27 @@
     em {
         padding-bottom: 200px;
     }
-   
+    .top-fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    .top-fieldset legend {
+      flex-basis: 100%;
+      }
+    .top-fieldset input,
+    .top-fieldset select {
+        flex-basis: 70%;
+      } 
+    .top-fieldset label {
+        display: block;
+        flex-basis: 30%;
+        margin-bottom: 30px;
+      }
+      #code {
+        max-width: 25%;
+      }
+
+
    
 }
