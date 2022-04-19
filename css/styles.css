@@ -159,7 +159,9 @@
   input[type="submit"]:hover {
   color: #1A374D;
   } 
-  input:focus {
+  input:focus,
+  textarea:focus,
+  select:focus {
     background: lightblue;
   }
   
