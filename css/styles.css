@@ -4,6 +4,7 @@
   }
   body {
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     
 
     
@@ -63,7 +64,6 @@
   ::placeholder {
     color: #406882;
     text-align: right;
-    font-family: 'Roboto', sans-serif;
     font-style: italic;
     padding-right: 5px;
     
@@ -159,7 +159,7 @@
   input[type="submit"]:hover {
   color: #1A374D;
   } 
-  input:hover {
+  input:focus {
     background: lightblue;
   }
   
@@ -173,7 +173,7 @@
     .first,
     .second
     {
-        max-width: 50%;
+        max-width: 550px;
         margin: auto;
     }
     .info {
