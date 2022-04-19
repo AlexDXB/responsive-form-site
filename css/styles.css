@@ -29,8 +29,13 @@
     margin-right: 15px;
     text-align: center;
     margin-bottom:  30px;
-    
   }
+  .third {
+    border-top: 2px solid #1A374D;
+    margin-bottom:  30px;
+    text-align: center;
+    
+}
  
   .signup {
     padding: 40px 15px 50px 15px;
@@ -45,14 +50,15 @@
       color: #406882;
   }
   .info {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
       padding-bottom: 200px;
   }
   fieldset {
       border: none;
       margin-bottom: 30px;
-      line-height: 30px;   
+      line-height: 30px;
+      padding: 0;   
   }
   ::placeholder {
     color: #406882;
@@ -78,7 +84,7 @@
 
   
   fieldset .contact {
-   display: block;
+    display: block;
     padding-bottom: 8px;
     color: #406882;
   }
@@ -109,7 +115,11 @@
   }
   label {
     color: #406882;
-
+  }
+  fieldset .topics {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 15px;
   }
   input[name="user_code"] {
       width: 50%;
@@ -130,7 +140,7 @@
     margin-bottom: 20px;
     border-radius: 8px;
   }
-  button {
+  input[type="submit"] {
       width: 100%;
       border: none;
       height: auto;
@@ -141,15 +151,43 @@
       font-size: 20px;
       margin-bottom: 20px;
   }
-  button:active {
+  input[type="submit"]:active {
     background-color: white;
     color: #7CD1B8;
     outline: 1px solid #7CD1B8;
   }
-  button:hover {
+  input[type="submit"]:hover {
   color: #1A374D;
-} 
+  } 
+  
  
 
  
-  
+@media (min-width: 768px) {
+
+    .info,
+    .signup,
+    .first,
+    .second
+    {
+        max-width: 50%;
+        margin: auto;
+        
+        
+    }
+    .info {
+        padding: 0;
+    }
+    header {
+        max-width: 100%;
+    }
+    fieldset {
+        margin-top: 30px;
+        padding: 0;
+    }
+    em {
+        padding-bottom: 200px;
+    }
+   
+   
+}
